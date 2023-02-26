@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100% 100%;
+    grid-template-areas: "side content";
+    gap: 20px;
+}
+
+.side{
+    grid-area: side;
+    animation: changeBackgroudColor 7s infinite;
+}
+
+@keyframes changeBackgroudColor{
+    0%{
+        background-color: #99FF99;
+    }
+    50%{
+        background-color: #66FFFF;
+    }
+    100%{
+        background-color: #99FF99;
+    }
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.photo{
+    width: 150px;
+    border-radius: 180px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculo{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal{
+    margin-left: 17%;
+}
+
+.name, .email, .phone{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.quality{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp{
+    margin-top: 5%;
+}
+
+.group, .aprend, .viagem, .lid{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+
+}
+
+
+.curriculo h3{
+    padding-left: 10px;
+}
+
+.content{
+    grid-area: content;
+}
+
+.content div{
+    margin-top: 5%;
+}
